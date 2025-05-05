@@ -302,4 +302,56 @@ aa1b348a936e364998e613b279c57d03e4fde092 4º commit - Adicionando o index.html
 795f673f8c0c8254f62092ba2f51ded1c0aa3e85 3º commit
 377bcd484605131f45bb34c7dfba025f6a790246 2º commit - alterando o README.md
 d44048bcca2e8b14c1376813a6037bec477e031a 1º commit - criando o README.md
+PS D:\Workspace\Bootcamp> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\Workspace\Bootcamp> git add .
+PS D:\Workspace\Bootcamp> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+PS D:\Workspace\Bootcamp> git commit -m "6º commit - atualizando o README.md"
+[main 68d2a71] 6º commit - atualizando o README.md
+ 1 file changed, 305 insertions(+), 3 deletions(-)
+PS D:\Workspace\Bootcamp> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS D:\Workspace\Bootcamp> git log --pretty=oneline
+68d2a71422fd9be361c80714d50eeda2256fc999 (HEAD -> main) 6º commit - atualizando o README.md
+21a797bbf2d5584832dc566cde17feb557e23b2d (origin/main) 5º commit - deletando o index.html
+aa1b348a936e364998e613b279c57d03e4fde092 4º commit - Adicionando o index.html
+795f673f8c0c8254f62092ba2f51ded1c0aa3e85 3º commit
+377bcd484605131f45bb34c7dfba025f6a790246 2º commit - alterando o README.md
+d44048bcca2e8b14c1376813a6037bec477e031a 1º commit - criando o README.md
+PS D:\Workspace\Bootcamp> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 2.28 KiB | 2.28 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/pedromoliveiraf/curso-git.git
+   21a797b..68d2a71  main -> main
+branch 'main' set up to track 'origin/main'.
+PS D:\Workspace\Bootcamp> git log --pretty=oneline
+68d2a71422fd9be361c80714d50eeda2256fc999 (HEAD -> main, origin/main) 6º commit - atualizando o README.md
+21a797bbf2d5584832dc566cde17feb557e23b2d 5º commit - deletando o index.html
+aa1b348a936e364998e613b279c57d03e4fde092 4º commit - Adicionando o index.html
+795f673f8c0c8254f62092ba2f51ded1c0aa3e85 3º commit
+377bcd484605131f45bb34c7dfba025f6a790246 2º commit - alterando o README.md
+d44048bcca2e8b14c1376813a6037bec477e031a 1º commit - criando o README.md
 PS D:\Workspace\Bootcamp> 
